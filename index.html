@@ -187,3 +187,94 @@
 
         /* フッター */
         footer {
+            background-color: var(--forest-green);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 600px) {
+            .hero h2 { font-size: 2rem; }
+            .costume-box { flex-direction: column; text-align: center; }
+            .costume-icon { margin-bottom: 10px; margin-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>神楽ミライ伝承</h1>
+    <span style="font-size: 0.8rem;">周南市和田地区 三作神楽（みつくりかぐら）</span>
+</header>
+
+<div class="hero">
+    <h2>ママ、見て！<br>ボクも空を飛べるかも！</h2>
+    <p>Shall we Kagura?</p>
+</div>
+
+<div class="container">
+
+    <div class="kids-section">
+        <h2 style="margin-top:0;">みんなも「神楽（かぐら）」やってみない？</h2>
+        <p>周南市和田地区には、7年に1度だけの特別なダンス「三作神楽（みつくりかぐら）」があるんだ。</p>
+        <p>かっこいい衣装を着て、高くジャンプしたり、くるっと回ったり。<br>
+        まるでヒーローみたいな動きを、AI（エーアイ）が作った動画を見ながら練習しよう！</p>
+    </div>
+
+    <section>
+        <h2>Step 1：おうちで練習！</h2>
+        <p>パソコンやタブレットで動画を見ながら、お母さんと一緒に動いてみよう。<br>
+        ゲームみたいに真似するだけで、君も神楽マスターになれるかも！？</p>
+        
+        <div class="video-box">
+            <span class="video-label">練習用動画 (AI生成)</span>
+            <div>
+                <p style="text-align:center;">▶ 再生ボタンを押してスタート<br>（ここに生成したAI動画が入ります）</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; font-size: 0.9rem; color: #666;">
+            ※この動画は、昔の写真を最新のAI技術で動かして作りました。
+        </div>
+    </section>
+
+    <section>
+        <h2>Step 2：古民家で本番！</h2>
+        <p>練習ができたら、和田地区の古民家（こみんか）へ行こう。<br>
+        本物の衣装を着て、みんなの前で披露（ひろう）するよ。</p>
+
+        <div class="costume-box">
+            <div class="costume-icon">👘</div>
+            <div>
+                <h3>かっこいい衣装を着よう！</h3>
+                <p><strong>上：</strong> 白い着物でキリッと！<br>
+                <strong>下：</strong> 深緑（ふかみどり）の袴（はかま）で動きやすく！<br>
+                <strong>頭と背中：</strong> 赤いハチマキとタスキで、強さをアピール！</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="parents-section">
+        <h2>お母さまへ</h2>
+        <p>「神楽ミライ伝承」プロジェクトは、伝統芸能を通じて親子の新しいコミュニケーションを提案します。</p>
+        <ul class="point-list">
+            <li><strong>遊び感覚で伝統体験：</strong> AI動画を使うことで、堅苦しい稽古ではなく、ゲーム感覚で楽しく伝統文化に触れられます。</li>
+            <li><strong>親子の絆づくり：</strong> お子様と一緒に体を動かし、目標に向かって練習することで、普段とは違う会話や笑顔が生まれます。</li>
+            <li><strong>気軽な参加：</strong> 練習はご自宅で。発表の場は、地域の温かい古民家で。準備やしきたりを気にせずご参加いただけます。</li>
+        </ul>
+        <p style="font-size: 0.9rem; text-align: right;">対象：小学3年生前後のお子様と保護者様</p>
+    </div>
+
+    <a href="#" class="btn">体験会に申し込む</a>
+
+</div>
+
+<footer>
+    <p>© 2026 神楽ミライ伝承プロジェクト in 周南市和田</p>
+    <p>伝統 × AI × 親子</p>
+</footer>
+
+</body>
+</html>

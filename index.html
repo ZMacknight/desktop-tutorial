@@ -1,1 +1,189 @@
-<p>私のHPです</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神楽ミライ伝承 | Shall we Kagura? 周南市和田地区</title>
+    <style>
+        /* 全体の設定 */
+        :root {
+            --primary-orange: #ff8c00; /* 神楽の衣装や楽しさをイメージ */
+            --forest-green: #2d6a4f;   /* 和田の自然と袴の色 */
+            --bg-color: #fcfcf5;       /* 和紙のような優しい白 */
+            --text-color: #333;
+            --accent-red: #d90429;     /* 襷（たすき）の赤 */
+        }
+
+        body {
+            font-family: "Hiragino Maru Gothic ProN", "Rounded Mplus 1c", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-orange);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--forest-green);
+            border-bottom: 2px dashed var(--primary-orange);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+
+        h3 {
+            color: var(--accent-red);
+            font-size: 1.2rem;
+        }
+
+        /* ヒーローセクション（トップ画像部分） */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://placehold.jp/1200x600.png?text=Image:ParentChildDancing'); /* 仮画像 */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            color: white;
+            border: none;
+            font-size: 3rem;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            font-weight: bold;
+            background-color: var(--accent-red);
+            padding: 5px 20px;
+            border-radius: 20px;
+        }
+
+        /* コンテンツコンテナ */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 子供向けセクション */
+        .kids-section {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 2px solid var(--primary-orange);
+        }
+
+        .video-box {
+            background-color: #000;
+            color: white;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .video-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: var(--primary-orange);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* 衣装の説明ボックス */
+        .costume-box {
+            display: flex;
+            align-items: center;
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .costume-icon {
+            font-size: 3rem;
+            margin-right: 20px;
+        }
+
+        /* お母さん向けセクション */
+        .parents-section {
+            background-color: #fffaf0;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .point-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .point-list li {
+            margin-bottom: 15px;
+            padding-left: 1.5em;
+            position: relative;
+        }
+
+        .point-list li::before {
+            content: "★";
+            color: var(--primary-orange);
+            position: absolute;
+            left: 0;
+        }
+
+        /* ボタン */
+        .btn {
+            display: block;
+            width: 250px;
+            margin: 40px auto;
+            background-color: var(--accent-red);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #b90322;
+        }
+
+        /* フッター */
+        footer {
